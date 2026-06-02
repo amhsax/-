@@ -152,32 +152,48 @@ footer {
 
 </body>
 </html>
-<!-- زر واتساب دائري -->
-<a href="https://wa.me/966590834883" class="whatsapp-float" target="_blank">
-    💬
-</a>
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>زر واتساب</title>
 
 <style>
-.whatsapp-float {
+.whatsapp-btn {
     position: fixed;
     bottom: 20px;
-    left: 20px;
+    right: 20px;
     width: 60px;
     height: 60px;
     background-color: #25D366;
-    color: white;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 28px;
-    text-decoration: none;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-    z-index: 999;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    z-index: 1000;
+    transition: 0.3s;
 }
 
-.whatsapp-float:hover {
+.whatsapp-btn:hover {
     transform: scale(1.1);
-    transition: 0.2s;
+}
+
+.whatsapp-btn img {
+    width: 35px;
+    height: 35px;
 }
 </style>
+</head>
+
+<body>
+
+<a class="whatsapp-btn"
+   href="https://wa.me/966590834883"
+   target="_blank">
+   <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+</a>
+
+</body>
+</html>
